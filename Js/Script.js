@@ -108,6 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // --- 3. Mobile Menu Toggle ---
+  
   const mobileBtn = document.getElementById("mobile-menu-btn");
   const navLinks = document.querySelector(".nav-links");
   if (mobileBtn && navLinks) {
@@ -120,6 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // --- 4. Sticky Navbar & Back to Top ---
+
   const header = document.getElementById("navbar");
   const backToTopBtn = document.getElementById("back-to-top");
 
