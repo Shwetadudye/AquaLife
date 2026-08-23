@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AquaLife | Amazing Aquarium Collection</title>
+    <link rel="icon" type="image/svg+xml" href="./Utilites/icons8-fish-96.png" />
+    <meta
+      name="description"
+      content="Premium aquatic store offering high-quality fish, aquariums, and accessories."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./Css/Style.css" />
+  </head>
+  <body>
+    <header id="navbar">
+      <div class="nav-container">
+        <a href="#" class="logo">
+          <i class="fa-solid fa-fish-fins"></i> AquaLife
+        </a>
+
+        <nav class="nav-links" style="align-items: center">
+          <a href="#hero">Home</a>
+          <a href="#top-selling">Shop</a>
+          <a href="#categories">Categories</a>
+          <a href="#blog">Blog</a>
+          <a href="#footer">Contact</a>
+
+          <button id="auth-btn" class="btn-auth" style="margin-left: 0">
+            Login / Sign up
+          </button>
+        </nav>
+
+        <div class="nav-icons">
+          <div class="cart-icon" id="open-cart-btn" aria-label="Cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+          </div>
+
+          <button class="hamburger" id="mobile-menu-btn" aria-label="Menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="hero-content fade-up">
+          <h1>
+            Amazing <br /><span class="highlight">Aquarium Collection</span>
+          </h1>
+          <p>
+            Discover premium quality aquatic life, accessories, and tanks
+            designed for enthusiasts.
+          </p>
+          <a href="#top-selling" class="btn btn-primary">Shop Now</a>
+        </div>
+      </section>
+
+      <section id="categories" class="container section-padding">
+        <h2 class="section-title fade-up">Categories</h2>
+        <div class="category-grid fade-up">
+          <div class="category-card">
+            <img
+              src="https://cdn.britannica.com/29/121829-050-911F77EC/freshwater-aquarium.jpg"
+              alt="Aquariums"
+              loading="lazy"
+            />
+            <h3>Aquariums</h3>
+            <a href="#top-selling" class="btn btn-outline">Explore</a>
+          </div>
+          <div class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?w=500&auto=format&fit=crop"
+              alt="Aquarium Fish"
+              loading="lazy"
+            />
+            <h3>Aquarium Fish</h3>
+            <a href="#top-selling" class="btn btn-outline">Explore</a>
+          </div>
+          <div class="category-card">
+            <img
+              src="https://m.media-amazon.com/images/I/51L3vha5VyL._SY300_SX300_QL70_FMwebp_.jpg"
+              alt="Decor and Care"
+              loading="lazy"
+            />
+            <h3>Decor & Care</h3>
+            <a href="#top-selling" class="btn btn-outline">Explore</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="top-selling" class="container section-padding">
+        <h2 class="section-title fade-up">Top Selling Products</h2>
+        <div class="filter-container fade-up">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="fish">Fish</button>
+          <button class="filter-btn" data-filter="tanks">Tanks & Decor</button>
+        </div>
+        <div class="product-grid fade-up" id="product-list"></div>
+      </section>
+
+      <section id="countdown-offer" class="section-padding">
+        <div class="container countdown-container fade-up">
+          <h2>
+            Gold Fish Collection Up To <span class="highlight">50% Off!</span>
+          </h2>
+          <div class="timer">
+            <div class="time-box">
+              <span id="days">00</span><small>Days</small>
+            </div>
+            <div class="time-box">
+              <span id="hours">00</span><small>Hrs</small>
+            </div>
+            <div class="time-box">
+              <span id="minutes">00</span><small>Min</small>
+            </div>
+            <div class="time-box">
+              <span id="seconds">00</span><small>Sec</small>
+            </div>
+          </div>
+          <button class="btn btn-primary">Claim Offer</button>
+        </div>
+      </section>
+
+      <section id="video-promo" class="section-padding">
+        <div class="video-overlay fade-up">
+          <h2>Feel Fresh With Amazing Aquarium</h2>
+          <button id="play-video" class="play-btn" aria-label="Play Video">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+      </section>
+
+      <section id="gallery" class="container section-padding">
+        <h2 class="section-title fade-up">Project Gallery</h2>
+        <div class="masonry-grid fade-up">
+          <img
+            src="https://images.unsplash.com/photo-1495594059084-33752639b9c3?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Gallery 1"
+            class="gallery-img"
+            loading="lazy"
+          />
+          <img
+            src="https://i.pinimg.com/1200x/55/e1/a2/55e1a290c77acb307e82db3782806d20.jpg"
+            alt="Gallery 2"
+            class="gallery-img"
+            loading="lazy"
+          />
+          <img
+            src="https://i.pinimg.com/1200x/f7/43/71/f743710e49d04d0cfe78cf57c3909172.jpg"
+            alt="Gallery 3"
+            class="gallery-img"
+            loading="lazy"
+          />
+          <img
+            src="https://cdn.britannica.com/29/121829-050-911F77EC/freshwater-aquarium.jpg"
+            alt="Gallery 4"
+            class="gallery-img"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section id="blog" class="container section-padding">
+        <h2 class="section-title fade-up">Latest News & Blog</h2>
+        <div class="blog-grid fade-up">
+          <article class="blog-card">
+            <img
+              src="https://images.unsplash.com/photo-1495594059084-33752639b9c3?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Blog 1"
+              loading="lazy"
+            />
+            <div class="blog-content">
+              <small><i class="fa-regular fa-calendar"></i> Oct 24, 2025</small>
+              <h3>How to care for your Betta Fish</h3>
+              <p>
+                Essential tips and tricks to keep your Betta healthy and
+                vibrant.
+              </p>
+              <a href="#" class="read-more"
+                >Read More <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+          <article class="blog-card">
+            <img
+              src="https://m.media-amazon.com/images/I/51XcePo+nHL._SY300_SX300_QL70_FMwebp_.jpg"
+              alt="Blog 2"
+              loading="lazy"
+            />
+            <div class="blog-content">
+              <small><i class="fa-regular fa-calendar"></i> Oct 20, 2025</small>
+              <h3>Choosing the Right Aquarium Filter</h3>
+              <p>
+                A comprehensive guide to understanding different filtration
+                systems.
+              </p>
+              <a href="#" class="read-more"
+                >Read More <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+          <article class="blog-card">
+            <img
+              src="https://i.pinimg.com/736x/36/ad/ab/36adabed148dc137e0de5dc7a68575ea.jpg"
+              alt="Blog 3"
+              loading="lazy"
+            />
+            <div class="blog-content">
+              <small><i class="fa-regular fa-calendar"></i> Oct 15, 2025</small>
+              <h3>Top 5 Plants for Beginners</h3>
+              <p>
+                Bring your tank to life with these easy-to-grow aquatic plants.
+              </p>
+              <a href="#" class="read-more"
+                >Read More <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="newsletter" class="section-padding">
+        <div class="container newsletter-container fade-up">
+          <h2>Newsletter Subscribe</h2>
+          <p>Get latest updates and offers.</p>
+          <form id="newsletter-form">
+            <input
+              type="email"
+              id="email-input"
+              placeholder="Enter your email address..."
+              required
+            />
+            <button type="submit" class="btn btn-primary">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+          <div id="form-message"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <h3><i class="fa-solid fa-fish-fins"></i> AquaLife</h3>
+          <p>
+            Your premium destination for aquatic life and aquascaping needs.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#top-selling">Shop</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> Yari Road, Versova, Andheri West, Mumbai, Maharashtra – 400061
+          </p>
+          <p><i class="fa-solid fa-phone"></i>+91 98765 11122</p>
+          <p><i class="fa-solid fa-envelope"></i> support@aqualife.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 AquaLife. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- for activitung that video btn -->
+    <div id="video-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal" id="close-video">&times;</span>
+        <div class="video-container-wrapper">
+          <iframe
+            id="youtube-frame"
+            width="100%"
+            height="400"
+            src=""
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart -->
+    <div id="gallery-lightbox" class="lightbox">
+      <span class="close-lightbox" id="close-lightbox-btn">&times;</span>
+      <img class="lightbox-content" id="lightbox-img" />
+    </div>
+
+    <div id="cart-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal" id="close-cart-btn">&times;</span>
+        <h2 style="color: #0a192f; margin-bottom: 20px">Your Cart</h2>
+        <ul
+          id="cart-items-list"
+          style="list-style: none; padding: 0; margin-bottom: 20px"
+        ></ul>
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 2px solid #e0e0e0;
+            padding-top: 20px;
+          "
+        >
+          <h3>Total: $<span id="cart-total">0.00</span></h3>
+          <!-- <button class="btn btn-primary">Checkout</button> -->
+          <button id="checkout-btn" class="btn btn-primary">Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="toast" class="toast">Item added to cart!</div>
+
+    <button id="back-to-top" aria-label="Back to Top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Checkout -->
+    <div id="checkout-overlay" class="auth-overlay" style="display: none">
+      <div class="auth-panel">
+        <button id="close-checkout-btn" class="close-auth">&times;</button>
+
+        <h2>Secure Checkout</h2>
+        <p class="auth-subtitle">Review your items and enter payment details</p>
+
+        <div
+          style="
+            background: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 25px;
+          "
+        >
+          <h4 style="margin-bottom: 15px; color: #0a192f">Order Summary</h4>
+          <ul
+            id="checkout-summary-list"
+            style="
+              list-style: none;
+              padding: 0;
+              margin-bottom: 15px;
+              font-size: 0.9rem;
+            "
+          ></ul>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              font-weight: 700;
+              border-top: 1px solid #ddd;
+              padding-top: 10px;
+              font-size: 1.1rem;
+              color: #ff6b35;
+            "
+          >
+            <span>Total</span>
+            <span>$<span id="checkout-final-total">0.00</span></span>
+          </div>
+        </div>
+
+        <form id="checkout-form">
+          <div class="form-group">
+            <label>Shipping Name <span class="req">*</span></label>
+            <input
+              type="text"
+              id="checkout-name"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label>Shipping Address <span class="req">*</span></label>
+            <input
+              type="text"
+              placeholder="123 Aqua Street, Ocean City"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label>Credit Card <span class="req">*</span></label>
+            <input
+              type="text"
+              placeholder="XXXX-XXXX-XXXX-XXXX"
+              maxlength="19"
+              required
+            />
+          </div>
+          <div style="display: flex; gap: 15px">
+            <div class="form-group" style="flex: 1">
+              <label>Expiry <span class="req">*</span></label>
+              <input type="text" placeholder="MM/YY" maxlength="5" required />
+            </div>
+            <div class="form-group" style="flex: 1">
+              <label>CVC <span class="req">*</span></label>
+              <input type="text" placeholder="123" maxlength="4" required />
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="btn-submit-auth"
+            style="margin-top: 20px"
+          >
+            PAY NOW
+          </button>
+          <p class="auth-terms">Your payment is encrypted and 100% secure.</p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Blog Activation -->
+    <div id="blog-modal" class="modal">
+      <div
+        class="modal-content"
+        style="max-width: 700px; padding: 0; overflow: hidden; text-align: left"
+      >
+        <span
+          class="close-modal"
+          id="close-blog-btn"
+          style="
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            z-index: 10;
+          "
+          >&times;</span
+        >
+
+        <img
+          id="blog-modal-img"
+          src=""
+          alt="Blog Image"
+          style="width: 100%; height: 300px; object-fit: cover"
+        />
+
+        <div style="padding: 30px">
+          <small
+            id="blog-modal-date"
+            style="
+              color: #ff6b35;
+              font-weight: 600;
+              display: block;
+              margin-bottom: 10px;
+            "
+          ></small>
+          <h2
+            id="blog-modal-title"
+            style="color: #0a192f; margin-bottom: 20px; font-size: 1.8rem"
+          ></h2>
+
+          <p style="color: #555; line-height: 1.8; margin-bottom: 15px">
+            Welcome to the full article! Taking care of an aquarium requires
+            patience, the right equipment, and a good understanding of the
+            aquatic life you are housing.
+          </p>
+          <p style="color: #555; line-height: 1.8">
+            Whether you are planting a new rimless tank or introducing a
+            beautiful Betta fish to its new home, always ensure your water
+            parameters are stable. Check your filters weekly and perform
+            standard water changes to keep your ecosystem thriving.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- login & signup form -->
+    <div id="auth-overlay" class="auth-overlay" style="display: none">
+      <div class="auth-panel">
+        <button id="close-auth-btn" class="close-auth">&times;</button>
+
+        <div id="signup-view">
+          <h2>Create Account</h2>
+          <p class="auth-subtitle">
+            Already have an account? <a href="#" id="link-to-login">Sign in</a>
+          </p>
+
+          <form id="signup-form">
+            <div class="form-group">
+              <label>Full Name <span class="req">*</span></label>
+              <input type="text" placeholder="Enter your full name" required />
+            </div>
+            <div class="form-group">
+              <label>Email address <span class="req">*</span></label>
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label>Create Password <span class="req">*</span></label>
+              <input
+                type="password"
+                placeholder="Minimum 8 characters"
+                required
+              />
+            </div>
+
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-top: 15px;
+                margin-bottom: 20px;
+              "
+            >
+              <input
+                type="checkbox"
+                id="newsletter-optin"
+                checked
+                style="width: auto"
+              />
+              <label
+                for="newsletter-optin"
+                style="
+                  font-size: 0.9rem;
+                  font-weight: 400;
+                  color: #333;
+                  cursor: pointer;
+                  margin: 0;
+                "
+              >
+                Send me offers and updates on new aquatic arrivals
+              </label>
+            </div>
+
+            <button type="submit" class="btn-submit-auth">
+              CREATE ACCOUNT
+            </button>
+            <p class="auth-terms">
+              By creating an account, you agree to AquaLife's
+              <a href="#">Terms of Service</a> and
+              <a href="#">Privacy Policy</a>.
+            </p>
+          </form>
+        </div>
+
+        <div id="login-view" style="display: none">
+          <h2>Welcome to AquaLife</h2>
+          <p class="auth-subtitle">
+            New here? <a href="#" id="link-to-signup">Create an account</a>
+          </p>
+
+          <form id="login-form">
+            <div class="form-group">
+              <label>Email address <span class="req">*</span></label>
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label>Password <span class="req">*</span></label>
+              <input
+                type="password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+
+            <div
+              style="text-align: right; margin-top: -10px; margin-bottom: 20px"
+            >
+              <a
+                href="#"
+                style="
+                  color: #ff6b35;
+                  font-size: 0.85rem;
+                  text-decoration: none;
+                  font-weight: 500;
+                "
+                >Forgot Password?</a
+              >
+            </div>
+
+            <button type="submit" class="btn-submit-auth">SIGN IN</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./JS/script.js"></script>
+  <script src="./JS/signup.js"></script>
+  <script src="./JS/login.js"></script>
+  <script src="./JS/cart.js"></script>
+</html>
