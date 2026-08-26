@@ -15,9 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     authBtn.addEventListener("click", (e) => {
       e.preventDefault();
 
-
       // Check if they are currently logged in
-      
       if (localStorage.getItem("isLoggedIn") === "true") {
         
         const confirmLogout = confirm("Are you sure you want to log out?");
